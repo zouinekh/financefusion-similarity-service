@@ -11,3 +11,9 @@ services:
       - ./app:/app/app
 
     restart: unless-stopped
+        networks:
+      - fifu-net
+
+networks:
+  fifu-net:
+    external: true
