@@ -9,9 +9,8 @@ services:
       - PYTHONPATH=/app
     volumes:
       - ./app:/app/app
-
     restart: unless-stopped
-        networks:
+    networks:
       - fifu-net
 
 networks:
